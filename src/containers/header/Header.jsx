@@ -5,7 +5,7 @@ import Animation from "../../assets/animation.svg";
 
 function Header() {
   return (
-    <div className='app__header section__padding' id='home'>
+    <div className='app__header section__padding' id='header'>
       <div className='app__header-content'>
         <h1 className='gradient__text'>
         The world runs on code. <br/> 

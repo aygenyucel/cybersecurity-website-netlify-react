@@ -4,20 +4,16 @@ import './features.css';
 
 const featuresData = [
   {
-    title: 'Improving end distrusts instantly',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    title: 'Active Risk Assessment',
+    text: 'A real-time view of risk powered by technology and cyber expertise',
   },
   {
-    title: 'Become the tended active',
-    text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    title: 'Active Protection',
+    text: 'Monitoring and alerting designed to prevent risk before it escalates',
   },
   {
-    title: 'Message or am nothing',
-    text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
-  },
-  {
-    title: 'Really boy law county',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    title: 'Active Response',
+    text: 'Access to in-house claims and incident response teams who can work quickly to respond and recover',
   },
 ];
 
@@ -27,8 +23,7 @@ function Features() {
   return (
     <div className="app__features section__padding" id="features">
       <div className="app__features-heading">
-        <h1 className="gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
-        <p>Request Early Access to Get Started</p>
+        <h1 className="gradient__text">Active Insurance is a unified approach to digital risk</h1>
       </div>
       <div className="app__features-container">
         {featuresData.map((item, index) => (

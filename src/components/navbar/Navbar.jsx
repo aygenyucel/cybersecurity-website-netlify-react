@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import './navbar.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
-
-
+import { Link } from 'react-router-dom';
 const Menu = () => (
   <>
   <p><a href='/'>Home</a></p>
   <p><a href='/#solutions'>Solutions</a></p>
-  <p><a href='/#features'>Case Studies</a></p>
-  <p><a href='/#blog'>Blog</a></p>
+  <p><a href='/blog'>Blog</a></p>
   <p><a href='/company'>Company</a></p>
   </>
 )
@@ -20,7 +18,11 @@ function Navbar() {
   return (
     <div className='app__navbar'> 
       <div className='app__navbar-logo'>
+        <Link to={'/'}>
           <h1>LOGO</h1>
+        </Link>
+        
+          
       </div>
       <div className='app__navbar-links'>
         

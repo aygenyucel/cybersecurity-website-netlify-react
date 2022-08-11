@@ -43,6 +43,8 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+
+
 .gradient__text-dark {
   background: var(--gradient-text-dark);
   background-clip: text;

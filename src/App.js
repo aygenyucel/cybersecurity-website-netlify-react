@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Article, Brand, CTA, Navbar } from './components'; 
-import { Blog, Features, Footer, Solutions, Header, Company, ContactUs, Contact, AllPost, Post, CreatePost } from './containers';
+import { Blog, Features, Footer, Solutions, Header, Company, ContactUs, Contact, AllPost, Post } from './containers';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
             element= {<><div className='gradient__bg'><Navbar/><Contact /><Footer/></div></>}
           />
           <Route 
-            path='/AllPost' 
+            path='/blog' 
             element= {<><div className='gradient__bg'><Navbar/><AllPost /><Footer/></div></>}
           />
           <Route 
@@ -55,20 +55,6 @@ function App() {
     </Router>
 
 
-
-    // <div className='App'>
-    //     <div className='gradient__bg'> 
-    //       <Navbar />
-    //       <Header />
-    //     </div>
-    //     <Brand />
-    //     <WhatGPT3 />
-    //     <Features />
-    //     <Possibility />
-    //     <CTA />
-    //     <Blog />
-    //     <Footer />
-    // </div>
   )
 }
 

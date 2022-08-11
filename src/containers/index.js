@@ -7,5 +7,4 @@ export { default as Company } from './company/Company';
 export { default as ContactUs } from './contactUs/ContactUs';
 export { default as Contact } from './contact/Contact';
 export { default as AllPost } from './allPost/AllPost';
-export { default as CreatePost } from './createPost/CreatePost';
 export { default as Post } from './post/Post';

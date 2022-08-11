@@ -11,11 +11,19 @@ function Post() {
   
   return (
     
-    <div className='app__post'>
+    <div className='app__post  section__margin'>
       {PostBank.map(post =>{
         if(post.postId == postID) {
-            return <div><h1>{post.title}</h1>
-            <p>{post.content}</p></div>
+            return  <div className='app__post-div'>
+                      <div className='app__post-image'>
+                        <img src={`${post.imgUrl}`}></img>
+                      </div>
+                      <div className='app__post-text'>
+                        <h1>{post.title}</h1>
+                        <p>{post.content}</p>
+                      </div>
+                      
+                    </div>
         }   
       })} 
       

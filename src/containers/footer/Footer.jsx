@@ -5,12 +5,16 @@ import Feature from '../../components/feature/Feature';
 
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaRssSquare } from 'react-icons/fa';
 import { RssFeed } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <div className="app__footer section__padding">
     <div className="app__footer-links">
       <div className="app__footer-links_logo">
-        <h1>LOGO</h1>
+        <Link to={'/'}>
+          <h1>LOGO</h1>
+        </Link>
+        
         
       </div>
       <div className="app__footer-links_div">
@@ -45,10 +49,10 @@ const Footer = () => (
       
     </div>
     <div className='app__footer-icons'>
-          
-          <FaFacebookSquare className='footer-icon'/>
-          <FaTwitterSquare className='footer-icon'/>
-          <FaLinkedin className='footer-icon'/>
+          <a href="https://linkedin.com/" target='_blank'><FaLinkedin className='footer-icon'/></a>
+          <a href="https://facebook.com/" target='_blank'><FaFacebookSquare className='footer-icon'/></a>
+          <a href="https://twitter.com/" target='_blank'><FaTwitterSquare className='footer-icon'/></a>
+
           <FaRssSquare className='footer-icon'/>
 
         </div>
