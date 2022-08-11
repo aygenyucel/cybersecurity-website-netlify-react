@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
+
 
 const Menu = () => (
   <>
-  <p><a href='#home'>Home</a></p>
-  <p><a href='#wgpt3'>What is GPT3?</a></p>
-  <p><a href='#possibility'>Open AI</a></p>
-  <p><a href='#features'>Case Studies</a></p>
-  <p><a href='#blog'>Library</a></p>
+  <p><a href='/'>Home</a></p>
+  <p><a href='/#solutions'>Solutions</a></p>
+  <p><a href='/#features'>Case Studies</a></p>
+  <p><a href='/#blog'>Blog</a></p>
+  <p><a href='/company'>Company</a></p>
   </>
 )
 
@@ -18,17 +19,15 @@ function Navbar() {
   
   return (
     <div className='app__navbar'> 
+      <div className='app__navbar-logo'>
+          <h1>LOGO</h1>
+      </div>
       <div className='app__navbar-links'>
-        <div className='app__navbar-links_logo'>
-          <img src={logo} alt='logo' />
-        </div>
+        
         <div className='app__navbar-links_container'>
           <Menu />
         </div>
-        <div className='app__navbar-sign'>
-          <p>Sign in</p>
-          <button type='button'>Sign up</button>
-        </div>
+        
         <div className='app__navbar-menu'> 
           {toggleMenu
             ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)}/>
@@ -39,13 +38,18 @@ function Navbar() {
               <div className='app__navbar-menu_container-links'>
                 <Menu />
               </div>
-              <div className='app__navbar-menu_container-links-sign'>
-                <p>Sign in</p>
-                <button type='button'>Sign up</button>
+              <div className='app__navbar-menu_container-links-contact'>
+                <button type='button'>Contact Us</button>
               </div>
             </div>
           )}
         </div>
+      </div>
+      <div className='app__navbar-contact'>
+        <a href='/contact'>
+          <button type='button'>Contact Us</button>
+        </a>
+          
       </div>
 
     </div>

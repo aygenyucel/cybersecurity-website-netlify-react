@@ -16,21 +16,37 @@
     
 }
 
-.app__navbar-links-logo {
-    margin-right: 2rem;
+.app__navbar-logo {
+    padding-right: 2rem;
+}
+.app__navbar-logo h1 {
+    color: #ff4820;
 }
 
-.app__navbar-links-logo img {
-    width: 62px;
-    height: 16px;
-}
 
 .app__navbar-links_container {
     display: flex;
     flex-direction: row;
 }
 
-.app__navbar-sign {
+.app__navbar-links_container a {
+    color: #e8deff;
+    padding: 0.8rem;
+    
+}
+.app__navbar-links_container a:hover {
+    color: #0000;
+    background: 
+        linear-gradient(90deg,#9b6afa 50%,#ff4820 0) 
+        var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .4s;
+    
+}
+    
+
+.app__navbar-contact {
     
     display: flex;
     justify-content: flex-end;
@@ -41,7 +57,6 @@
 
 
 .app__navbar-links_container p,
-.app__navbar-sign p,
 .app__navbar-menu_container p {
     color: white;
     font-family: var(--font-family); 
@@ -53,10 +68,11 @@
     cursor: pointer;
 }
 
-.app__navbar-sign button,
+.app__navbar-contact button,
 .app__navbar-menu_container button {
     font-family: var(--font-family);
     font-weight: 500;
+    font-size: 18px;
     padding: 0.5rem 1rem;
     color: white;
     width: 152px;
@@ -74,6 +90,7 @@
     display: none;
     margin-left: 1rem;
     position: relative;
+
 }
 
 .app__navbar-menu svg {
@@ -102,7 +119,7 @@
     margin: 1rem 0;
 }
 
-.app__navbar-menu_container-links_sign {
+.app__navbar-menu_container-links_contact {
     display: none;
 }
 
@@ -128,7 +145,7 @@
         padding: 2rem;
     }
 
-    .app__navbar-sign {
+    .app__navbar-contact {
         display: none;
     }
     
@@ -136,7 +153,7 @@
         top: 20px;
     }
 
-    .app__navbar-menu_container-links_sign {
+    .app__navbar-menu_container-links_contact {
         display: block;
     }
 }

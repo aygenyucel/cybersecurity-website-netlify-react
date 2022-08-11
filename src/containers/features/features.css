@@ -41,6 +41,13 @@
     flex-direction: column;
 }
 
+.app__features-container p {
+    color: var(--color-text-dark);
+}
+.app__features-container h1 {
+    color: var(--color-header-dark);
+}
+
 @media screen and (max-width: 990px) {
     .app__features {
         flex-direction: column;
