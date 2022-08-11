@@ -5,7 +5,6 @@ import { Blog, Features, Footer, Solutions, Header, Company, ContactUs, Contact,
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  //deneme
   return (
     <Router>
       <div className="app">
