@@ -1,18 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+
+
 const Menu = () => (
+  
   <>
-  <p><a href='/'>Home</a></p>
-  <p><a href='/#solutions'>Solutions</a></p>
-  <p><a href='/blog'>Blog</a></p>
-  <p><a href='/company'>Company</a></p>
+    <Link to={'/'}>
+      <p>Home</p>
+    </Link>
+    <Link to={'/#solutions'}>
+      <p>Solutions</p>
+    </Link>
+    <Link to={'/blog'}>
+      <p>Blog</p>
+    </Link>
+    <Link to={'/company'}>
+      <p>Company</p>
+    </Link>
   </>
 )
 
 function Navbar() {
+
+  
+
   const [toggleMenu, setToggleMenu] = useState(false);
   
   return (

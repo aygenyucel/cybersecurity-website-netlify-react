@@ -11,7 +11,7 @@ function AllPost() {
 
         <div className='app__allPost-left'>
             <div className='app__allPost-header'>
-                <h1 className='gradient__text'>All Post</h1>
+                <h1 className='gradient__text'>BLOG</h1>
             </div>
             <div className='app__allPost-posts'>
                 {PostBank.map(post =>{

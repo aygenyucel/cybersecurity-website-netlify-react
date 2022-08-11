@@ -6,6 +6,7 @@ import { PostBank } from '../postBank/PostBank';
 import { Link } from 'react-router-dom';
 
 const Blog = () => (
+
   <div className="app__blog section__padding gradient__bg" >
     <div className="app__blog-heading">
       <h1 className="gradient__text">Take a Look Through Our Articles</h1>
