@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
-import './blog.css';
+import './blogPage.css';
 import { Link } from 'react-router-dom';
 import { PostBank } from '../../helpers/PostBank';
 
-function Blog() {
+function BlogPage() {
    return(
-    <div className='app__blog section__padding gradient__bg'>
-        <div className='app__blog-left'>
-            <div className='app__blog-header'>
+    <div className='app__blogPage section__padding gradient__bg'>
+        <div className='app__blogPage-left'>
+            <div className='app__blogPage-header'>
                 <h1 className='gradient__text'>BLOG</h1>
             </div>
-            <div className='app__blog-posts'>
+            <div className='app__blogPage-posts'>
                 {PostBank.map(post =>{
                     return(
-                        <div className='app__blog-post'>
+                        <div className='app__blogPage-post'>
                             <img src={`${post.imgUrl}`} />             
                             <h1 className='gradient__text'>{post.title}</h1>
                             <p>{post.shortContent}</p>
@@ -25,7 +25,7 @@ function Blog() {
                 })} 
             </div>   
         </div>
-        <div className='app__blog-right'>
+        <div className='app__blogPage-right'>
             {/* right column */}
         </div>     
     </div>
@@ -33,4 +33,4 @@ function Blog() {
    
 }
 
-export default Blog
+export default BlogPage

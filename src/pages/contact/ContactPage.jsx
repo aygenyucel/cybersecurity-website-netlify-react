@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './contact.css';
+import './contactPage.css';
 // import { CountryDropdown } from 'react-country-region-selector';
 
-function Contact() {
+function ContactPage() {
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
@@ -13,28 +13,28 @@ function Contact() {
   }
 
   return (
-    <div className='app__contact section__padding'>
-      <div className='app__contact-context'>
+    <div className='app__contactPage section__padding'>
+      <div className='app__contactPage-context'>
         <h1 className='gradient__text'>Have questions?</h1>
         <p>Solving problems is what we live for. Reach out - even if you’re not sure what your next step is. You’ll hear back from an expert today.</p>
       </div>
-      <div className='app__contact-form'>
-          <div className='app__contact-form-row'>
-            <div className='app__contact-form-input'>
+      <div className='app__contactPage-form'>
+          <div className='app__contactPage-form-row'>
+            <div className='app__contactPage-form-input'>
               <p>First Name:</p>
               <input type="text" name='firstname'  onChange={handleChangeInput} required/> 
             </div>
-            <div className='app__contact-form-input'>
+            <div className='app__contactPage-form-input'>
               <p>Last Name:</p>
               <input type="text" name='lastname'  onChange={handleChangeInput} required/> 
             </div>
           </div>
-          <div className='app__contact-form-row'>
-              <div className='app__contact-form-input'>
+          <div className='app__contactPage-form-row'>
+              <div className='app__contactPage-form-input'>
                 <p>Email:</p>
                 <input type="email" name='email'  onChange={handleChangeInput} required/> 
               </div>
-              <div className='app__contact-form-input'>
+              <div className='app__contactPage-form-input'>
                 <p>Phone Number:</p>
                 <input 
                   type="text" 
@@ -47,14 +47,14 @@ function Contact() {
                  
               </div>
           </div>
-          <div className='app__contact-form-row'>            
-            <div className='app__contact-form-input'>
+          <div className='app__contactPage-form-row'>            
+            <div className='app__contactPage-form-input'>
               <p>Company:</p>
               <input type="text" name='company'  onChange={handleChangeInput} required/>
             </div>            
           </div>
-          <div className='app__contact-form-row'>
-              <div className='app__contact-form-input'>
+          <div className='app__contactPage-form-row'>
+              <div className='app__contactPage-form-input'>
                 <p>Please tell us how we can help you:</p>
                 <textarea 
                   name='message'
@@ -64,8 +64,8 @@ function Contact() {
                   required/>
               </div>
           </div>
-          <div className='app__contact-form-row'>
-            <div className='app__contact-form-input'>
+          <div className='app__contactPage-form-row'>
+            <div className='app__contactPage-form-input'>
               <button type="submit">Submit</button>
             </div>            
           </div>                  
@@ -74,4 +74,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default ContactPage
