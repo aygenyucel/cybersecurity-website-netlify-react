@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 :root {
   --font-family: 'Play', sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #996bfe 1.84%, #ff4820 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #996bfe -13.86%, #ff4820 99.55%);
-
   --gradient-text-dark: linear-gradient(89.97deg, #000000 1.84%, #ff4820 102.67%);
   
   --color-bg: #ebebeb;

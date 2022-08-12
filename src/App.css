@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
 }
 
-
 body {
     background: var(--color-bg);
 }
@@ -16,7 +15,6 @@ a {
 }
 
 .gradient__bg {
-
   /* ff 3.6+ */
   background:-moz-radial-gradient(circle at 100% 61%, rgba(64, 44, 107, 1) 0%, rgba(0, 0, 0, 1) 100%);
 
@@ -31,19 +29,14 @@ a {
 
   /* global 92%+ browsers support */
   background:radial-gradient(circle at 100% 61%, rgba(64, 44, 107, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
 }
   
-       
-
 .gradient__text {
     background: var(--gradient-text);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 
 .gradient__text-dark {
   background: var(--gradient-text-dark);
@@ -85,7 +78,6 @@ a {
               transform: scale(1);
     }
   }
-  
   
   @media screen and (max-width: 700px) {
     .section__padding {

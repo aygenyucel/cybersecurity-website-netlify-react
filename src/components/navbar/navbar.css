@@ -19,10 +19,10 @@
 .app__navbar-logo {
     padding-right: 2rem;
 }
+
 .app__navbar-logo h1 {
     color: #ff4820;
 }
-
 
 .app__navbar-links_container {
     display: flex;
@@ -45,7 +45,6 @@
     
 }
     
-
 .app__navbar-contact {
     
     display: flex;
@@ -54,7 +53,6 @@
     align-items: center;
 
 }
-
 
 .app__navbar-links_container p,
 .app__navbar-menu_container p {
@@ -90,7 +88,6 @@
     display: none;
     margin-left: 1rem;
     position: relative;
-
 }
 
 .app__navbar-menu svg {

@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
-
 const Menu = () => (
-  
   <>
     <Link to={'/'}>
       <p>Home</p>
@@ -24,26 +21,18 @@ const Menu = () => (
 )
 
 function Navbar() {
-
-  
-
   const [toggleMenu, setToggleMenu] = useState(false);
-  
   return (
     <div className='app__navbar'> 
       <div className='app__navbar-logo'>
         <Link to={'/'}>
           <h1>LOGO</h1>
-        </Link>
-        
-          
+        </Link>       
       </div>
-      <div className='app__navbar-links'>
-        
+      <div className='app__navbar-links'>      
         <div className='app__navbar-links_container'>
           <Menu />
-        </div>
-        
+        </div>       
         <div className='app__navbar-menu'> 
           {toggleMenu
             ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)}/>
@@ -62,12 +51,10 @@ function Navbar() {
         </div>
       </div>
       <div className='app__navbar-contact'>
-        <a href='/contact'>
+        <Link to={'/contact'}>
           <button type='button'>Contact Us</button>
-        </a>
-          
+        </Link>
       </div>
-
     </div>
   )
 }

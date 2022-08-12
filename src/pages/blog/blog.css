@@ -1,0 +1,94 @@
+.app__blog {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.app__blog-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 3;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.app__blog-header h1{
+    margin-bottom: 2rem;
+    font-size: 50px;
+}
+
+.app__blog-posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.app__blog-post {
+    margin: 2rem;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background:-moz-linear-gradient(137deg, rgba(235, 235, 235, 1) 50%, rgba(238, 68, 33, 1) 98%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(137deg, rgba(235, 235, 235, 1) 50%, rgba(238, 68, 33, 1) 98%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(137deg, rgba(235, 235, 235, 1) 50%, rgba(238, 68, 33, 1) 98%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EE4421', endColorstr='#EBEBEB', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(137deg, rgba(235, 235, 235, 1) 50%, rgba(238, 68, 33, 1) 98%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(137deg, rgba(235, 235, 235, 1) 50%, rgba(238, 68, 33, 1) 98%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    box-shadow: 30px 30px;
+}
+
+.app__blog-post img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.app__blog-post h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.app__blog-post p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: var(--color-text-dark);
+}
+
+.app__blog-post button {
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    background: #ff4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
