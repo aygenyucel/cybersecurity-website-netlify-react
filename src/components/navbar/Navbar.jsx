@@ -8,9 +8,9 @@ const Menu = () => (
     <Link to={'/'}>
       <p>Home</p>
     </Link>
-    <Link to={'/#solutions'}>
+    <a href='/#solutions'>
       <p>Solutions</p>
-    </Link>
+    </a>
     <Link to={'/blog'}>
       <p>Blog</p>
     </Link>
