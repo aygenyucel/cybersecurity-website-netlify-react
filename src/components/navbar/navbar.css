@@ -4,7 +4,7 @@
     align-items: center;
     padding: 2rem 6rem;
     flex-direction: row;
-    
+    width: 100%;
 }
 
 .app__navbar-links {
@@ -13,7 +13,6 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    
 }
 
 .app__navbar-logo {
@@ -30,28 +29,15 @@
 }
 
 .app__navbar-links_container a {
-    color: #e8deff;
-    padding: 0.8rem;
-    
-}
-.app__navbar-links_container a:hover {
-    color: #0000;
-    background: 
-        linear-gradient(90deg,#9b6afa 50%,#ff4820 0) 
-        var(--_p,100%)/200% no-repeat;
-    -webkit-background-clip: text;
-            background-clip: text;
-    transition: .4s;
+    color: white;
     
 }
     
 .app__navbar-contact {
-    
     display: flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     align-items: center;
-
 }
 
 .app__navbar-links_container p,
@@ -88,6 +74,7 @@
     display: none;
     margin-left: 1rem;
     position: relative;
+    z-index: 999;
 }
 
 .app__navbar-menu svg {
@@ -112,12 +99,27 @@
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
 }
 
-.app__navbar-menu_container p {
-    margin: 1rem 0;
+.app__navbar-menu_container-links div{
+    margin: 3rem 0;
 }
 
 .app__navbar-menu_container-links_contact {
     display: none;
+}
+
+.navbar-link {
+    margin: 1.5rem;
+    color:black;
+}
+
+.navbar-link:hover {
+    color: #0000;
+    background: 
+        linear-gradient(90deg,#9b6afa 50%,#ff4820 0) 
+        var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .4s;
 }
 
 /* for tablets */
@@ -128,12 +130,23 @@
 
     .app__navbar-menu {
         display: flex;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        align-items: center;  
+    }
+
+    .app__navbar-contact {
+        display: none;
     }
 }
 
 @media screen and (max-width: 700px) {
     .app__navbar {
         padding: 2rem 4rem;
+    }
+
+    .app__navbar-contact {
+        display: none;
     }
 }
 

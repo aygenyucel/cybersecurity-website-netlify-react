@@ -1,0 +1,215 @@
+.app__solutions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+
+    box-shadow: 30px 30px #fff;
+}
+
+.app__solutions .app__solutions-heading h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.app__solutions-feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.app__solutions-feature .app__feature {
+    margin: 0;
+    flex: 1;
+}
+
+/* Customizing feature component as per needs */
+.app__solutions-feature .app__feature-text {
+    max-width: 700px;
+}
+
+.app__solutions-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.app__solutions-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+
+
+    padding-right: auto;
+    padding-left: auto;
+}
+
+
+.app__solutions-container {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+.app__solutions-container .app__feature:hover{
+    // background-color: #ebebeb;
+    cursor: pointer;
+    // filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+
+    // .app__feature-text {
+    //     color: black;
+    //     font-weight: 600;
+    // }
+    // .app__feature-title-header p {
+    //     color: black;
+    // }
+}
+
+
+
+
+/* Customizing feature component as per needs */
+.app__solutions-container .app__feature-text {
+    margin-top: 0.5rem;
+}
+
+.app__solutions-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app__solutions-button button {
+    width: 35rem;
+    
+    margin-top: 2rem;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #ff4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    // margin-top: 2rem;
+
+}
+
+@media screen and (max-width: 850px) {
+    .app__solutions-heading {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0rem;
+
+    }
+
+    .app__solutions-heading p {
+        margin-top: 1rem;
+    }
+
+    .app__solutions-container {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .app__solutions-button button {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .app__solutions-feature .app__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .app__solutions-feature .app__feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .app__solutions-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .app__solutions-button button {
+        width: 100%;
+    }
+
+    .app__solutions {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        box-shadow: none;
+    }
+
+    .app__solutions-container .app__feature{
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .app__solutions-container .app__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+
+    .app__solutions {
+       box-shadow: none; 
+       padding-right: 0.7rem;
+       padding-left: 0.7rem;
+       margin: 0;
+       margin-top: 5rem;
+    }
+
+    .app__solutions-container .app__feature{
+        padding-bottom: 0;
+    }
+
+    
+}
+
+.app-icon {
+    color: #ff4820 ;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.6rem;
+}

@@ -4,16 +4,20 @@ import './features.css';
 
 const featuresData = [
   {
-    title: 'Active Risk Assessment',
-    text: 'A real-time view of risk powered by technology and cyber expertise',
+    title: 'Unparalleled visibility, speed and scale',
+    text: 'Get instant visibility and control of all your global IT assets at infinite scale!',
   },
   {
-    title: 'Active Protection',
-    text: 'Monitoring and alerting designed to prevent risk before it escalates',
+    title: 'A platform that grows with you',
+    text: 'As your needs change, easily and seamlessly add powerful functionality, coverage and users.',
   },
   {
-    title: 'Active Response',
-    text: 'Access to in-house claims and incident response teams who can work quickly to respond and recover',
+    title: 'See the results in one place',
+    text: 'The Qualys Cloud Platform is an end-to-end solution for all aspects of IT, security and compliance. Avoid the gaps that come with trying to glue together siloed solutions.',
+  },
+  {
+    title: 'Drastically reduce cost',
+    text: 'Save significant resources and the time otherwise required managing multiple solutions.',
   },
 ];
 

@@ -5,18 +5,32 @@ import { Link } from 'react-router-dom';
 
 const Menu = () => (
   <>
-    <Link to={'/'}>
-      <p>Home</p>
-    </Link>
-    <a href='/#solutions'>
-      <p>Solutions</p>
-    </a>
-    <Link to={'/blog'}>
-      <p>Blog</p>
-    </Link>
-    <Link to={'/company'}>
-      <p>Company</p>
-    </Link>
+    <div>
+      <Link className='navbar-link' to={'/'}>
+        Home
+      </Link>
+    </div>
+    <div>
+      <a className='navbar-link' href='/#solutions'>
+        Solutions
+      </a>
+    </div>
+    <div>
+      <Link className='navbar-link' to={'/blog'}>
+        Blog
+      </Link>
+    </div>
+    <div>
+      <a className='navbar-link' href='/#products'>
+        Products
+      </a>
+    </div>
+    <div>
+      <Link className='navbar-link' to={'/company'}>
+        Company
+      </Link>
+    </div>
+
   </>
 )
 
@@ -33,7 +47,13 @@ function Navbar() {
         <div className='app__navbar-links_container'>
           <Menu />
         </div>       
-        <div className='app__navbar-menu'> 
+      </div>
+      <div className='app__navbar-contact'>
+        <Link to={'/contact'}>
+          <button type='button'>Contact Us</button>
+        </Link>
+      </div>
+      <div className='app__navbar-menu'> 
           {toggleMenu
             ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)}/>
             : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)}/>
@@ -44,17 +64,14 @@ function Navbar() {
                 <Menu />
               </div>
               <div className='app__navbar-menu_container-links-contact'>
-                <button type='button'>Contact Us</button>
+                <Link to={'/contact'}>
+                  <button onClick={() => setToggleMenu(false)} type='button'>Contact Us</button>
+                </Link>
               </div>
+              
             </div>
           )}
         </div>
-      </div>
-      <div className='app__navbar-contact'>
-        <Link to={'/contact'}>
-          <button type='button'>Contact Us</button>
-        </Link>
-      </div>
     </div>
   )
 }

@@ -3,38 +3,39 @@
     flex-direction: column;    
     justify-content: center;
     align-items: center;
-    margin-bottom: 7rem;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 2rem;
+
 }
 .app__blog button{
-    margin-top: 4rem;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    padding: 0.5rem 1rem;
-    color: white;
-    width: 152px;
-    height: 58px;
-    left: 1153px;
-    top: 55px;
-    background: #FF4820;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
+    width: 35rem;
+    
+    margin-top: 3rem;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #ff4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
     cursor: pointer;
+    outline: none;
+    border-radius: 5px;
 }
 
 .app__blog-heading {
     width: 100%;
     text-align: center;
 
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .app__blog-heading h1 {
-    font-size: 60px;
-    line-height: 75px;
-    font-family: var(--font-family);
-    font-weight: 800;
+    font-size: 40px;
 }
 
 .app__blog-container {
@@ -55,7 +56,7 @@
     grid-gap: 2rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 850px) {
     .app__blog-container {
         flex-direction: column-reverse;
     }
@@ -63,6 +64,7 @@
 
     .app__blog-container_groupA {
         margin: 2rem 0;
+        display: none;
     }
 
     .app__blog-container_groupA .gpt3__blog-container_article  {
@@ -72,9 +74,14 @@
     .app__blog-container_groupA .gpt3__blog-container_article-image {
         height: 250px;
     }
+
+    .app__blog button {
+        margin-top: 2rem;
+        width: 20rem;
+    }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
     .app__blog-container_groupB {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -84,8 +91,17 @@
     }
 
     .app__blog-heading h1 {
-        font-size: 46px;
+        font-size: 28px;
         line-height: 52px;
+    }
+
+    .app__blog button {
+        width: 100%;
+    }
+
+    .app__blog {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
     }
 }
 
@@ -95,4 +111,16 @@
         line-height: 42px;
     }
 
+    .app__blog {
+        margin: 0;
+    }
+    
+    .app__blog button {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
 }
+
+
+

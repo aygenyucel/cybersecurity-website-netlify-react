@@ -1,6 +1,8 @@
 .app__header {
     display: flex;
     flex-direction: row;
+    width: auto;
+    padding: 4rem 6rem;
 }
 
 .app__header-content {
@@ -10,6 +12,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-right: 5rem;
+    width: 100%;
 }
 
 .app__header-content h1 {
@@ -30,7 +33,6 @@
 
 
 .app__header-content button {
-    
     width: 100%;
     margin-top: 1.5rem;
     min-height: 50px;
@@ -45,7 +47,6 @@
     cursor: pointer;
     outline: none;
     border-radius: 5px;
-    
 }
 
 .app__header-image {
@@ -60,27 +61,41 @@
     height: 100%;
 }
 
-
-
 @media screen and (max-width: 1050px) {
     .app__header {
         flex-direction: column;
     }
 
+    .app__header-image img {
+        width: 80%;
+        height: 80%;
+    }
+
     .app__header-content {
         margin: 0 0 3rem;
     }
-    
+
+    .app__header-content button {
+        margin-top: 2rem;
+    }
+
+    .app__header-content h1 {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .app__header h1{
+    .app__header {
+        padding: 3rem 5rem;
+    }
+
+    .app__header-content h1{
         font-size: 48px;
         line-height: 60px;
     }
 
-    .app__header p {
-        font-size: 16px;
+    .app__header-content p {
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -88,16 +103,21 @@
         font-size: 16px;
         line-height: 24px;
     }
+
+    .app__header-image img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 490px) {
-    .app__header h1{
+    .app__header-content h1{
         font-size: 36px;
         line-height: 48px;
     }
 
-    .app__header p {
-        font-size: 14px;
+    .app__header-content p {
+        font-size: 15px;
         line-height: 24px;
     }
 
@@ -105,6 +125,11 @@
     .app__header-content__input button {
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .app__header-image img {
+        width: 100%;
+        height: 100%;
     }
     
 }

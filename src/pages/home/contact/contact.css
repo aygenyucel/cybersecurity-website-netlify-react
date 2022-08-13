@@ -4,10 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8rem;
-    padding: 2rem;
     background: var(--color-footer);
-
+    margin-top: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     /* ff 3.6+ */
     background:-moz-radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
 
@@ -23,16 +25,15 @@
     /* global 92%+ browsers support */
     background:radial-gradient(circle at 100% 100%, rgba(255, 72, 32, 1) 0%, rgba(33, 22, 55, 1) 47%);
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    box-shadow: 30px 30px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+
+    box-shadow: 30px 30px #fff;
 }
 
 .app__contact-header {
     width: 60%; 
     text-align: center;
-    margin-bottom: 4rem;
+    
 
 }
 
@@ -45,13 +46,15 @@
 
 .app__contact-text p {
     color: var(--color-text);
+    text-align: center;
+    margin-top: 5rem;
 }
 
 .app__contact-button button {
-    width: 500px;
-    margin-top: 1.5rem;
+    width: 35rem;
+    
+    margin-top: 2rem;
     min-height: 50px;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -62,4 +65,59 @@
     cursor: pointer;
     outline: none;
     border-radius: 5px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .app__contact {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .app__contact-button button {
+        width: 20rem;
+
+    }
+    .app__contact-text p {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .app__contact-header h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .app__contact-button button {
+        width: 15rem;
+
+    }
+
+    .app__contact-header h1{
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    .app__contact {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        box-shadow: none;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+
+    .app__contact {
+        box-shadow: none; 
+       padding-right: 0.7rem;
+       padding-left: 0.7rem;
+       margin: 0;
+       margin-top: 4rem;
+    }
+    
+
 }

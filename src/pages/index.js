@@ -7,4 +7,5 @@ export { default as ContactPage } from './contact/ContactPage';
 export { default as BlogSection } from './home/blog/Blog';
 export { default as BlogPage } from './blog/BlogPage';
 export { default as Post } from './post/Post';
+export { default as Products } from './home/products/Products';
 

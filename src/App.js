@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { Brand, Footer, Navbar, ScrollToTop} from './components'; 
-import { BlogSection, Features, Solutions, Company, ContactSection, ContactPage, BlogPage, Post, Header } from './pages';
+import { BlogSection, Features, Solutions, Company, ContactSection, ContactPage, BlogPage, Post, Header, Products } from './pages';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,10 +24,11 @@ function App() {
                   </div>
                     <Brand />
                     <Solutions />
-                    <Features />
                     <BlogSection />
                     <ContactSection />
-                    <Footer /></>} 
+                    <Products />
+                    <Footer />
+                    </>} 
             />
             <Route
               path='/login'

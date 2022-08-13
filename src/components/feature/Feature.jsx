@@ -3,13 +3,14 @@ import './feature.css';
 
 function Feature({ title, text}) {
   return (
-    <div className='app__features-container__feature'>
-      <div className='app__features-container__feature-title'>
-        
-        <div />
-        <h1>{title}</h1>
+    <div className='app__feature'>
+      <div className='app__feature-title'>
+        <div className='app__feature-title-line' />
+        <div className='app__feature-title-header'>
+          <p>{title}</p>
+        </div>
       </div>
-      <div className='app__features-container_feature-text'>
+      <div className='app__feature-text'>
         <p>{text}</p>
       </div>
     </div>

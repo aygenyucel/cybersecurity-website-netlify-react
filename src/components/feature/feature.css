@@ -1,27 +1,28 @@
-.app__features-container__feature {
+.app__feature {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    flex-direction: row;
-    margin: 1rem;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.app__features-container__feature-title {
+.app__feature-title {
+    display: flex;
     flex: 1;
     max-width: 180px;
-    margin-right: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.app__features-container__feature-title h1 {
-    font-family: var(--font-family);
+.app__feature-title-header p {
     font-weight: 800;
     font-size: 18px;
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
 
-.app__features-container__feature-title div {
+.app__feature-title-line {
     width: 38px;
     height: 3px;
     left: 196px;
@@ -31,7 +32,7 @@
     margin-bottom: 0.4rem;
 }
 
-.app__features-container_feature-text{
+.app__feature-text{
     flex: 2;
     width: auto;
     height: 92px;
@@ -42,20 +43,21 @@
     font-size: 14px;
     line-height: 24px;
     color: var(--color-text);
+    
 }
 
 @media screen and (max-width: 550px) {
-    .app__features-container__feature-title {
+    .app__feature-title {
         font-size: 14px;
         line-height: 22px;
     }
 
-    .app__features-container_feature-text {
-        font-size: 12px;
+    .app__feature-text {
+        font-size: 15px;
         line-height: 20px;
     }
 
-    .app__features-container__feature {
+    .app__feature {
         margin: 1rem 0;
     }
     
