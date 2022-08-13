@@ -58,7 +58,7 @@ const Footer = () => (
     </div>
 
     <div className="app__footer-copyright">
-      <p>@2022 XXX. All rights reserved.</p>
+      <p>@2022 Aygen. All rights reserved.</p>
     </div>
   </div>
 );
